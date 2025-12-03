@@ -1,0 +1,31 @@
+<div class="row">
+    <!-- FILTRO -->
+    <div class="col-md-3">
+        <div class="card p-3 mb-4 shadow-sm">
+            <h5>Filtrar productos</h5>
+            <label for="categoriaSelect">Categoría</label>
+            <select id="categoriaSelect" class="form-select mb-3">
+                <option selected disabled>Elige una categoría</option>
+                <option value="1">Zapatillas</option>
+                <option value="2">Zapatos</option>
+                <option value="3">Sandalias</option>
+                <option value="4">Botas</option>
+                <option value="5">TODOS</option>
+            </select>
+            <input type="search" id="in_search" class="form-control mb-2" placeholder="Buscar producto...">
+            <button id="btnBuscar" class="btn btn-dark w-100">Buscar</button>
+        </div>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div class="col-md-9">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gx-4 gy-4" id="main-products"></div>
+    </div>
+
+    <!-- PAGINACIÓN -->
+    <div class="d-flex justify-content-center align-items-center my-3">
+        <button id="prevBtn" class="btn btn-outline-dark me-2"><</button>
+        <div id="pageNumbers" class="mx-2"></div>
+        <button id="nextBtn" class="btn btn-outline-dark ms-2">></button>
+    </div>
+</div>
